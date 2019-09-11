@@ -1,0 +1,44 @@
+2019-09-11 13:06:15,310 - INFO - Бот запускается.
+2019-09-11 13:06:25,189 - INFO - Вызван /start
+2019-09-11 13:06:32,169 - INFO - Вызвана /planet
+2019-09-11 13:06:52,399 - INFO - Вызвана /planet
+2019-09-11 13:08:07,933 - INFO - Received signal 2 (SIGINT), stopping...
+2019-09-11 13:08:16,547 - INFO - Бот запускается.
+2019-09-11 13:08:20,034 - INFO - Вызван /start
+2019-09-11 13:08:27,713 - INFO - Вызвана /planet
+2019-09-11 13:08:37,364 - INFO - Вызвана /planet
+2019-09-11 13:09:48,563 - INFO - Received signal 2 (SIGINT), stopping...
+2019-09-11 13:10:03,529 - INFO - Бот запускается.
+2019-09-11 13:10:12,479 - INFO - Вызвана /planet
+2019-09-11 13:10:29,319 - INFO - Вызвана /planet
+2019-09-11 13:16:27,305 - INFO - Received signal 2 (SIGINT), stopping...
+2019-09-11 13:16:37,509 - INFO - Бот запускается.
+2019-09-11 13:16:43,062 - INFO - Вызван /start
+2019-09-11 13:16:52,633 - INFO - Вызвана /planet
+2019-09-11 13:17:00,146 - INFO - Вызвана /planet
+2019-09-11 13:17:06,195 - INFO - Вызвана /planet
+2019-09-11 13:17:25,603 - INFO - Вызвана /planet
+2019-09-11 13:18:41,676 - INFO - Received signal 2 (SIGINT), stopping...
+2019-09-11 13:18:49,646 - INFO - Бот запускается.
+2019-09-11 13:18:55,338 - INFO - Вызвана /planet
+2019-09-11 13:21:44,798 - INFO - Received signal 2 (SIGINT), stopping...
+2019-09-11 13:21:50,730 - INFO - Бот запускается.
+2019-09-11 13:21:58,408 - INFO - Вызвана /planet
+2019-09-11 13:22:21,113 - INFO - Вызвана /planet
+2019-09-11 13:22:21,113 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/telegram/ext/dispatcher.py", line 372, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/telegram/ext/handler.py", line 120, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 21, in check_the_sign
+    message = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2019-09-11 13:22:45,738 - INFO - Вызвана /planet
+2019-09-11 13:22:56,018 - INFO - Вызвана /planet
+2019-09-11 13:23:05,611 - INFO - Вызвана /planet
+2019-09-11 13:25:43,126 - INFO - Received signal 2 (SIGINT), stopping...
+2019-09-11 13:25:51,693 - INFO - Бот запускается.
+2019-09-11 13:25:52,446 - INFO - Вызван /start
+2019-09-11 13:26:04,304 - INFO - Вызвана /planet
+2019-09-11 13:26:13,563 - INFO - Вызвана /planet
