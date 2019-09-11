@@ -42,3 +42,6 @@ AttributeError: 'NoneType' object has no attribute 'text'
 2019-09-11 13:25:52,446 - INFO - Вызван /start
 2019-09-11 13:26:04,304 - INFO - Вызвана /planet
 2019-09-11 13:26:13,563 - INFO - Вызвана /planet
+2019-09-11 13:46:33,973 - INFO - Вызван /start
+2019-09-11 13:46:53,773 - INFO - Вызвана /planet
+2019-09-11 13:47:09,461 - INFO - Вызвана /planet
