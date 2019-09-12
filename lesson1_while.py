@@ -7,14 +7,6 @@ def ask_user():
             print('Пока!')
             break
 
-ask_user()
-
-questions_answers = {
-    'Как дела?': 'Отлично!',
-    'Как настроение?': 'Отлично!',
-    'Что делаешь?': 'Программирую!'
-}
-
 def positive_thinking(questions_answers):
     checker = True
     while checker:
@@ -27,4 +19,11 @@ def positive_thinking(questions_answers):
         else:
             print('Я не расслышал :()')
 
+questions_answers = {
+    'Как дела?': 'Отлично!',
+    'Как настроение?': 'Отлично!',
+    'Что делаешь?': 'Программирую!'
+}
+
+ask_user()
 positive_thinking(questions_answers)

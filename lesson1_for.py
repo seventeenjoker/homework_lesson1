@@ -19,14 +19,9 @@ school_list = [
 ]
 
 # средний балл по классу и средний балл по школе
-average = 0
 average_school = 0
 for dic in school_list:
-    total = 0
-    for value in dic['scores']:
-        total +=value
-    average = total / len(dic['scores'])
-    print('Средний балл по классу {}: {}'.format(dic['school_class'], average))
-    average_school += average
+    print(f"Средний балл по классу {dic['school_class']}: {sum(dic['scores']) / len(dic['scores'])}")
+    average_school += sum(dic['scores']) / len(dic['scores']) 
 average_school = average_school / len(school_list)
 print('Средний балл по школе: {}'.format(average_school))
