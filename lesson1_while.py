@@ -8,14 +8,13 @@ def ask_user():
             break
 
 def positive_thinking(questions_answers):
-    checker = True
-    while checker:
+    while True:
         question = input('Давай поговорим!')
         if questions_answers.get(question):
             print(questions_answers[question])
         elif question == 'хватит.':
             print('Пока :)')
-            checker = False
+            break
         else:
             print('Я не расслышал :()')
 

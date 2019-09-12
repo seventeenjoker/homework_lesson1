@@ -1,6 +1,6 @@
-list = [9, 19, 29, 39, 49, 59, 69, 79, 89, 99]
+list_ex = [9, 19, 29, 39, 49, 59, 69, 79, 89, 99]
 
-for num in list:
+for num in list_ex:
     print(num + 1)
 
 str1 = str(input('Введите строку:'))
@@ -19,9 +19,12 @@ school_list = [
 ]
 
 # средний балл по классу и средний балл по школе
+all_marks = [mark for class_info in school_list for mark in class_info['scores']]
+school_sum = sum(all_marks)
+school_avr = school_sum / len(all_marks)
+print(f"Средний балл по школе: {school_avr}")
+
 average_school = 0
 for dic in school_list:
-    print(f"Средний балл по классу {dic['school_class']}: {sum(dic['scores']) / len(dic['scores'])}")
-    average_school += sum(dic['scores']) / len(dic['scores']) 
-average_school = average_school / len(school_list)
-print('Средний балл по школе: {}'.format(average_school))
+    average_class = sum(dic['scores']) / len(dic['scores'])
+    print(f"Средний балл по классу {dic['school_class']}: {average_class}")

@@ -1,7 +1,7 @@
 import six
 
 def check_arg(arg1, arg2):
-    if not isinstance(arg1, six.string_types) or not isinstance(arg2, six.string_types):
+    if not isinstance(arg1, str) or not isinstance(arg2, str):
         return 0
     elif arg1 == arg2:
         return 1
