@@ -18,10 +18,7 @@ for i in range(5):
             print('Попытки определить чем вам заниматься закончены.')
             break
         print('Попробуйте снова.')
-    if isinstance(age, int):
-        task1 = what_to_do(age)
-        print(task1)
-        break
-    else:
-        print('Вы явно вводите не число.')
-    
+        continue
+    task1 = what_to_do(age)
+    print(task1)
+    break
