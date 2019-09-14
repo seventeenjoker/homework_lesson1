@@ -12,7 +12,7 @@ logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s',
 def greet_user(bot, update):
     text = 'Вызван /start'
     logging.info(text)
-    user_text = 'Hello stranger! Here you can get information about Planet in constellation on today. '
+    user_text = 'Hello stranger! Here you can get information about Planet in constellation on today. ' \
                 'Tell me now which planet you wanna know about? Use /planet planet_name ;)'
     update.message.reply_text(user_text)
 
@@ -34,10 +34,13 @@ def check_the_sign(bot, update):
     message = update.message.text
     command, planet = message.split()
     planet_new = planet.capitalize()
+    pl = planets_dic.get(planet_new, 0)
     misunderstanding = "I didn't get you, sorry. Try '/planet sun'"
-    error_message = 'Ooops...something went wrong...'
-    if planets_dic.get(planet_new, 0) in planets_dic:
-        update.message.reply_text(ephem.constellation(planets_dic[planet_new](today)))
+    # error_message = 'Ooops...something went wrong...'
+    if pl:
+        update.message.reply_text(ephem.constellation(pl(today)))
+    else:
+        update.message.reply_text(misunderstanding)
 
 def main():
     mybot = Updater(settings.API_KEY, request_kwargs=settings.PROXY)
