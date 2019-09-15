@@ -23,7 +23,7 @@ def check_the_sign(bot, update):
     planets_dic = {
         'Mars': ephem.Mars,
         'Moon': ephem.Moon,
-        'Saturn': ephem.Moon,
+        'Saturn': ephem.Saturn,
         'Jupiter': ephem.Jupiter,
         'Uranus': ephem.Uranus,
         'Neptune': ephem.Neptune,
