@@ -1,4 +1,5 @@
 from datetime import datetime, date, timedelta
+from dateutil.relativedelta import *
 
 '''
 Задание
@@ -13,7 +14,8 @@ delta_one_day = timedelta(days=1)
 dt_yesterday = dt_now - delta_one_day
 print(f'Yesterday was: {dt_yesterday}')
 
-delta_one_month = timedelta(days=30)
+
+delta_one_month = relativedelta(months=1)
 dt_month_ago = dt_now - delta_one_month
 print(f'One month ago was: {dt_month_ago}')
 

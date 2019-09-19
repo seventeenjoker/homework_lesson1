@@ -15,7 +15,7 @@ class Product:
     def discounted(self):
         return self.price - self.price * self.discount / 100
 
-    def sell(self, items_count = 1):
+    def sell(self, items_count=1):
         if items_count > self.stock:
             raise ValueError('Недостаточно товаров на складе!')
         self.stock -= items_count

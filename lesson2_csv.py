@@ -21,5 +21,4 @@ with open('new_csv_file.csv', 'w', encoding = 'utf-8') as f:
     fields = ['name', 'age', 'job']
     writer = csv.DictWriter(f, fields, delimiter = ';')
     writer.writeheader()
-    for person in persons_list:
-        writer.writerow(person)
+    writer.writerows(persons_list)
